@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:brown;
+    position: auto;
+}
+#board{
+    border: 2px solid teal;
+    width: 680px;
+    height: 680px;
+    margin:0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.card{
+    border: 2px dotted black;
+    width:25%;
+    height: 25%;
+}
