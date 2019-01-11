@@ -5,9 +5,11 @@ var Validate = function(Valore, rightanswer, form, span) {
   var formname = document.getElementById(form)
   var spanname = document.getElementById(span)
   var divnam = document.getElementById(top)
+  
 
   //using the variable and set it with the input 
   spanname.innerHTML = rightanswer;
+
 // 
 //set a condition  
 //if the answer is right say GREAT and show the answer;
@@ -20,20 +22,20 @@ else {
   formname.innerHTML ="<div style='background-color:red'><h1>Sorry, you where wrong: The answer was: " + rightanswer + "</h1></div>";
 }
 };
-function handleClick()
-  {         
-var amountCorrect = 0;          
-for(var i = 1; i <= 10; i++) {
-  var radios = document.getElementsByName('choice'+i);
+var rightanswer = 0;          
+
+function handleClick(){         
+for(var i = 1; i <= 5; i++) {
+  var radios = document.getElementsByName('choice');
   for(var j = 0; j < radios.length; j++) {
     var radio = radios[j];
     
-    if(rightanswer == "choice.value" && radio.checked) {
-      console.log (amountCorrect++);
+    if( radios[j] ==  radio.checked) {
+      console.log (rightanswer++);
     }
   }
  }                   
- console.log("Correct Responses: " + amountCorrect++);
+ alert("Correct Responses: " + rightanswer++);
   };
 
 // var input = document.getElementsByTagName("button")
