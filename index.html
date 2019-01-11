@@ -9,52 +9,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Multiple Choise</h1>
-    <div class="two">
-    <h2>JavaScript is a <span id='a1'>______</span> Language.</h2><br>
-    <form id="d1">
-    <input type="radio" name="choice" value="Scripting"> Scripting
-    <input type="radio" name="choice" value="Programming"> Programming
-    <input type="radio" name="choice" value="Application"> Application
-    <input type="radio" name="choice" value="None of These"> None of These
-    <br>
-    <input type="submit" value="submit" onclick="validate(choice.value, 'Scripting', 'd1','a1')">
-    </form>
-    </div>
+        <h1>Multiple Choise</h1>
+    <section>
+    
+    <div class= "five">
+            <h2>1, what color is this rgb(0, 0, 0) <span id='q1'>______?</span></h1><br>
+            <form id="Q1">
+            <input id="prompt" type="radio" name="choice" value="Green"> Green<br>
+            <input id="prompt" type="radio" name="choice" value="Red"> Red<br>
+            <input id="prompt" type="radio" name="choice" value="Blue"> Blue<br>
+            <input id="prompt" type="radio" name="choice" value="None of These, it is black"> None of These <br>
+            <br>
+            <input type="submit" value="submit" onclick="Validate(choice.value, 'None of These, it is black', 'Q1', 'q1')">
+            </div>
+            </form>
     <div class= "two">
-    <h1>what color is this rgb(255, 0, 0) <span id='q2'>______?</span></h1><br>
+    <h2>2, what color is this rgb(255, 0, 0) <span id='q2'>______?</span></h2><br>
     <form id="Q2">
-    <input type="radio" name="choice" value="Green"> Green
-    <input type="radio" name="choice" value="Red"> Red
-    <input type="radio" name="choice" value="Blue"> Blue
-    <input type="radio" name="choice" value="None of These"> None of These
+    <input type="radio" name="choice" value="Green"> Green<br>
+    <input type="radio" name="choice" value="Red"> Red<br>
+    <input type="radio" name="choice" value="Blue"> Blue<br>
+    <input type="radio" name="choice" value="None of These"> None of These<br>
     <br>
     <input type="submit" value="submit" onclick="Validate(choice.value, 'Red', 'Q2', 'q2')">
     </div>
     </form>
-    <div class= "tw">
-    <h1>what color is this rgb(255, 0, 0) <span id='q3'>______?</span></h1><br>
+    <div class= "three">
+    <h2>3, what color is this rgb(0, 0, 255) <span id='q3'>______?</span></h2><br>
     <form id="Q3">
-    <input type="radio" name="choice" value="Green"> Green
-    <input type="radio" name="choice" value="Red"> Red
-    <input type="radio" name="choice" value="Blue"> Blue
-    <input type="radio" name="choice" value="None of These"> None of These
+    <input type="radio" name="choice" value="Green"> Green<br>
+    <input type="radio" name="choice" value="Red"> Red<br>
+    <input type="radio" name="choice" value="Blue"> Blue<br>
+    <input type="radio" name="choice" value="None of These"> None of These<br>
     <br>
-    <input type="submit" value="submit" onclick="Validate(choice.value, 'blue', 'Q3', 'q3')">
+    <input type="submit" value="submit" onclick="Validate(choice.value, 'Blue', 'Q3', 'q3')">
     </div>
     </form>
-    <div class= "Q4">
-    <h1>what color is this rgb(255, 0, 0) <span id='q4'>______?</span></h1><br>
+    <div class= "four">
+    <h2>4, what color is this rgb(255, 0, 0) <span id='q4'>______?</span></h1><br>
     <form id="Q4">
-    <input type="radio" name="choice" value="Green"> Green
-    <input type="radio" name="choice" value="Red"> Red
-    <input type="radio" name="choice" value="Blue"> Blue
-    <input type="radio" name="choice" value="None of These"> None of These
+    <input type="radio" name="choice" value="Green"> Green<br>
+    <input type="radio" name="choice" value="Red"> Red<br>
+    <input type="radio" name="choice" value="Blue"> Blue<br>
+    <input type="radio" name="choice" value="None of These"> None of These<br>
     <br>
-    <input type="submit" value="submit" onclick="Validate(choice.value, 'None of These', 'Q4', 'q4')">
+    <input type="submit" value="submit" onclick="Validate(choice.value, 'Red', 'Q4', 'q4')">
     </div>
     </form>
-      
+    <div class= "five">
+            <h2>5, what color is this rgb(255, 234, 32) <span id='q5'>______?</span></h1><br>
+            <form id="Q5">
+            <input type="radio" name="choice" value="wrong"> Green<br>
+            <input type="radio" name="choice" value="wrong"> Red<br>
+            <input type="radio" name="choice" value="wrong"> Blue<br>
+            <input type="radio" name="choice" value="correct"> None of These<br>
+            <br>
+            <input type="submit" value="submit" onclick="Validate(choice.value, 'correct', 'Q5', 'q5')">
+            </div>
+            </form>
+      </section>
+      <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+
+
             <script src="scripts.js"></script>
 </body>
 </html>
+
+<!-- <h1>1, what color is this rgb(255, 0, 0) <span id='q4'>______?</span></h1><br>
+<input id="prompt" type="radio" name="chice1" value="wrong"> Blue<br>
+<input id="prompt" type="radio" name="chice1" value="wrong"> Green<br>
+<input id="prompt" type="radio" name="chice1" value="correct"> Red<hr>
+<button class="submit" onclick="return handleClick();" type="submit">Submit</button> -->
