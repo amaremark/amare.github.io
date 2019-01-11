@@ -5,7 +5,6 @@ var Validate = function(Valore, rightanswer, form, span) {
   var formname = document.getElementById(form)
   var spanname = document.getElementById(span)
   var divnam = document.getElementById(top)
-  var inputs = document.getElementByTagName('input');
 
   //using the variable and set it with the input 
   spanname.innerHTML = rightanswer;
@@ -13,7 +12,6 @@ var Validate = function(Valore, rightanswer, form, span) {
 //set a condition  
 //if the answer is right say GREAT and show the answer;
 // if the answer is not right alert  SORRY and show the write answer.
-// inputs.addEventListener("click",handleClick)
 if (Valore == rightanswer) {
   formname.innerHTML ="<div style='background-color:lightgreen'><h1>GREAT! YOU'RE RIGHT: The answer, in fact, was: " + rightanswer + "</h1></div>";
 }
@@ -25,18 +23,17 @@ else {
 function handleClick()
   {         
 var amountCorrect = 0;          
-for(var i = 1; i <= 4; i++) {
+for(var i = 1; i <= 10; i++) {
   var radios = document.getElementsByName('choice'+i);
   for(var j = 0; j < radios.length; j++) {
     var radio = radios[j];
     
-    if(onclick == "choice.value" && radio.checked) {
-       console.log (amountCorrect++);
+    if(rightanswer == "choice.value" && radio.checked) {
+      console.log (amountCorrect++);
     }
   }
  }                   
-//  alert("Correct Responses: " + amountCorrect);
- 
+ console.log("Correct Responses: " + amountCorrect++);
   };
 
 // var input = document.getElementsByTagName("button")
